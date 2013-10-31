@@ -30,6 +30,8 @@ define('__PASSWORD','password');
 define('__BASEDATOS','basedatos');
 ```
 
+- Si estan en linux deben de dar permisos de escritura al directorio upload en forma recursiva.
+
 ### Localmente
 
 Y luego ejecuta la aplicacion, y si es posible lo puedes hace con PHP 5.4 :
@@ -39,5 +41,5 @@ php -S localhost:8080
 
 ### Demo
 
-El resultado lo puedes ver [aquí](http://ajaxform-gildus.aws.af.cm/)
+El resultado lo puedes ver [aquí](http://gildusnetworks.com/demo/)
 
