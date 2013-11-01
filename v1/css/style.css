@@ -1,0 +1,15 @@
+@charset "UTF-8";
+
+body {
+  padding-top: 30px;
+}
+
+.prev_thumb {
+    height: 200px;
+    margin: 10px;
+    width: 100%;
+}
+
+body .container{
+	margin-bottom:50px;
+}

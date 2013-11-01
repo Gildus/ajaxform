@@ -1,0 +1,90 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"><![endif]-->
+<meta charset="utf-8">
+<title>Subida</title>
+<meta name="description" content="">
+<meta name="viewport" content="">
+
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<link rel="stylesheet" href="css/style.css">
+
+
+</head>
+<body>
+
+	<div class="container">
+		<h1>Ejemplo de Form</h1>
+		<h2 class="lead">Subida de imagen con ajax</h2>
+		<form role="form"  enctype="multipart/form-data" method="post" action="save.php">
+			<div class="form-group">
+				<label for="titulo">Titulo</label>
+				<input id="titulo" name='titulo' class="form-control" type="text" placeholder="Titulo" required>
+			</div>
+			<div class="form-group">
+				<label for="comentario">Comentario</label>
+				<textarea id="comentario" name='comentario' class="form-control" placeholder="Comentario"  required></textarea>
+			</div>
+			<div class="form-group">
+				<label for="logotipo">Logotipo (máximo 200px por 200px)</label>
+				<div class='row'>
+					<div class="col-sm-4">
+						<span class="btn btn-success">						
+							<input class="file" id="logotipo" type="file" name="file_logo" multiple required >
+						</span>
+						<div id="prev_logotipo"></div>
+					</div>
+				</div>
+				
+			</div>
+			<div class="form-group">
+				
+					<label for="imagen">Imágen (máximo 300px por 400px)</label>
+				<div class='row'>			
+					<div class="col-sm-4">
+						<span class="btn btn-success">
+							<input class="file" id="imagen" type="file" name="file_imagen" multiple required >						
+						</span>
+						<div id="prev_imagen"></div>
+					</div>			
+				</div>
+				
+			</div>
+			<div class="form-group">
+				<label for="piepagina">Pie de Página</label>
+				<textarea id="piepagina" name='piepagina' class="form-control" placeholder="Pie de Pagina" required></textarea>
+			</div>
+			<button type="button" class="btn" id='btnPreview'>Vista Previa</button>
+			<button type="submit" class="btn btn-primary" id='btnGuardar' data-loading-text="Un momento...">Guardar Datos</button>
+		</form>
+		
+		
+		
+		<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+		  <div class="modal-dialog">
+			<div class="modal-content">
+			  
+			  <div class="modal-body">
+					<div id='tpl_titulo'></div>
+					<div id='tpl_comentario'></div>
+					<div id='tpl_logotipo'></div>
+					<div id='tpl_imagen'></div>
+					<div id='tpl_piepagina'></div>
+			  </div>
+			  
+			</div>
+		  </div>
+		</div>
+
+
+		
+	</div>
+
+	<script src="js/jquery-1.10.2.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/jquery.preimage.js"></script>
+	<script src="js/jquery.form.js"></script>
+	<script src="js/script.js"></script>
+</body> 
+</html>
