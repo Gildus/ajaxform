@@ -41,5 +41,12 @@ php -S localhost:8080
 
 ### Demo
 
-El resultado lo puedes ver [aquí](http://gildusnetworks.com/demo/)
+El resultado lo puedes ver [aquí](http://gildusnetworks.com/demo2)
+
+
+### Gracias
+
+- [twitter-bootstrap-wizard](https://github.com/VinceG/twitter-bootstrap-wizard)
+- Bootstrap
+- Y las librerías usadas en el directorio /js
 
