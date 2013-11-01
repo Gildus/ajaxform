@@ -17,11 +17,11 @@ $(function () {
 				$('.alert').remove();
 				if (response.status == 200) {					
 					if(response.responseText=='ok') {
-						$('.container').prepend('<div class="alert alert-success"><h4>Exito</h4>!Se guardaron los datos satisfactoriamente...</div>');
+						$('.container_main').prepend('<div class="alert alert-success"><h4>Exito</h4>!Se guardaron los datos satisfactoriamente...</div>');
 						$('form').resetForm();
 						$('.prev_container').empty();
 					} else {
-						$('.container').prepend('<div class="alert alert-danger"><h4>Ops!</h4>Ocurrio un error interno...</div>');
+						$('.container_main').prepend('<div class="alert alert-danger"><h4>Ops!</h4>Ocurrio un error interno...</div>');
 					}
 					$('html, body').animate({scrollTop:0}, 'slow');
 				}
